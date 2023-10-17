@@ -65,3 +65,21 @@ function acenderLampada() {
 document.getElementById("btn-acender-lamp").addEventListener("click", function () {
     acenderLampada();
 });
+
+var lampCheckbox = document.getElementById("lamp-1");
+var lampStatus = document.getElementById("lamp-status-1");
+var comodo = document.querySelector(".device#luzes");
+
+lampCheckbox.addEventListener("change", function () {
+    if (lampCheckbox.checked) {
+        // Lâmpada acesa
+        comodo.style.backgroundColor = "yellow";  // Fundo amarelo
+        comodo.style.color = "black";  // Texto preto
+        lampStatus.textContent = "Acesa";
+    } else {
+        // Lâmpada apagada
+        comodo.style.backgroundColor = "black";  // Fundo preto
+        comodo.style.color = "white";  // Texto branco
+        lampStatus.textContent = "Apagada";
+    }
+});

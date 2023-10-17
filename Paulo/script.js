@@ -15,6 +15,7 @@ document.getElementById("btn-sala-on").addEventListener("click", function () {
 document.getElementById("btn-sala-off").addEventListener("click", function () {
     desligarEnergia("sala");
 });
+
 document.getElementById("btn-cozinha-on").addEventListener("click", function () {
     ligarEnergia("cozinha");
 });

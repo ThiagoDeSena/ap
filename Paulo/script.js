@@ -47,3 +47,21 @@ document.getElementById("btn-banheiro-on").addEventListener("click", function ()
 document.getElementById("btn-banheiro-off").addEventListener("click", function () {
     desligarEnergia("banheiro");
 });
+
+function acenderLampada() {
+    var lamp = document.getElementById("lamp-1");
+    var lampStatus = document.getElementById("lamp-status-1");
+    
+    if (lamp.checked) {
+        lampStatus.textContent = "Ligada";
+        // Aqui você pode adicionar mais ações, como ligar a lâmpada real.
+    } else {
+        lampStatus.textContent = "Desligada";
+        // Aqui você pode adicionar mais ações, como desligar a lâmpada real.
+    }
+}
+
+// Adiciona um ouvinte de evento ao botão para acender a lâmpada
+document.getElementById("btn-acender-lamp").addEventListener("click", function () {
+    acenderLampada();
+});

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="building">
+        <div class="reception">
+            <h1>Recepção</h1>
+        </div>
+        <div class="floors">
+            <div class="floor">
+                <div class="apartment">
+                    <h3>Minha Casa</h3>
+                    <div class="casa">
+                        <div class="comodo" id="sala">Sala de Estar</div>
+                        <div class="comodo" id="cozinha">Cozinha</div>
+                        <div class="comodo" id="quarto">Quarto 1</div>
+                        <div class="comodo" id="quarto2">Quarto 2</div>
+                        <div class="comodo" id="banheiro">Banheiro
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="floors">
+            <div class="floor">
+
+                <div class="apartment">
+                        <div class="apartment">
+                        <h2>Central de Comandos:</h2>
+                        <h2>Energia:</h2>
+                        </div>
+
+                    <div class="column">
+                        <h2>Comodos</h2>
+                        <h3>Sala</h3>
+                        <button id="btn-sala-on" onclick="ligarEnergia('sala')">Ligar energia da Sala</button>
+                        <button id="btn-sala-off" onclick="desligarEnergia('sala')">Desligar energia da
+                            Sala</button>
+                    </div>
+
+                    <div class="column">
+                        <h3>Cozinha</h3>
+                        <button id="btn-cozinha-on" onclick="ligarEnergia('cozinha')">Ligar energia da
+                            Cozinha</button>
+                        <button id="btn-cozinha-off" onclick="desligarEnergia('cozinha')">Desligar energia da
+                            Cozinha</button>
+                    </div>
+
+                    <div class="column">
+                        <h3>Quarto</h3>
+                        <button id="btn-quarto-on" onclick="ligarEnergia('quarto')">Ligar energia do Quarto
+                            1</button>
+                        <button id="btn-quarto-off" onclick="desligarEnergia('quarto')">Desligar energia do Quarto
+                            1</button>
+                    </div>
+
+                    <div class="column">
+                        <h3>Quarto 2</h3>
+                        <button id="btn-quarto2-on" onclick="ligarEnergia('quarto2')">Ligar energia do Quarto
+                            2</button>
+                        <button id="btn-quarto2-off" onclick="desligarEnergia('quarto2')">Desligar energia do Quarto
+                            2</button>
+                    </div>
+
+                    <div class="column">
+                        <h3>Banheiro</h3>
+                        <button id="btn-banheiro-on" onclick="ligarEnergia('banheiro')">Ligar energia do
+                            Banheiro</button>
+                        <button id="btn-banheiro-off" onclick="desligarEnergia('banheiro')">Desligar energia do
+                            Banheiro</button>
+                    </div>
+
+                </div>
+                <div class="apartment">
+                    <div class="apartment">
+                        <h2>Central de Comandos:</h2>
+                        <h2>Luzes:</h2>
+                    </div>
+                    <div class="column">
+                        <h2>Comodos</h2>
+                        <h3>Sala</h3>
+                        <button id="btn-sala-on" onclick="ligarLuz('sala')">Ligar luzes da Sala</button>
+                        <button id="btn-sala-off" onclick="desligarLuz('sala')">Desligar luzes da Sala</button>
+                    </div>
+
+                    <div class="column">
+                        <h3>Cozinha</h3>
+                        <button id="btn-cozinha1-on" onclick="ligarLuz('cozinha')">Ligar energia da
+                            Cozinha</button>
+                        <button id="btn-cozinha1-off" onclick="desligarLuz('cozinha')">Desligar energia da
+                            Cozinha</button>
+                    </div>
+
+                    <div class="column">
+                        <h3>Quarto</h3>
+                        <button id="btn-quarto1-on" onclick="ligarLuz('quarto')">Ligar energia do Quarto
+                            1</button>
+                        <button id="btn-quarto1-off" onclick="desligarLuz('quarto')">Desligar energia do Quarto
+                            1</button>
+                    </div>
+
+                    <div class="column">
+                        <h3>Quarto 2</h3>
+                        <button id="btn-quarto21-on" onclick="ligarLuz('quarto2')">Ligar energia do Quarto
+                            2</button>
+                        <button id="btn-quarto21-off" onclick="desligarLuz('quarto2')">Desligar energia do Quarto
+                            2</button>
+                    </div>
+
+                    <div class="column">
+                        <h3>Banheiro</h3>
+                        <button id="btn-banheiro1-on" onclick="ligarLuz('banheiro')">Ligar energia do
+                            Banheiro</button>
+                        <button id="btn-banheiro1-off" onclick="desligarLuz('banheiro')">Desligar energia do
+                            Banheiro</button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="bnt-liga-geral" onclick="ligaGeral()">Ligar Geral</button>
+            <button id="bnt-desliga-geral" onclick="desligaGeral()">Desligar Geral</button>
+        </div>
+        <div class="quintal">
+            <h1>Terraço</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
